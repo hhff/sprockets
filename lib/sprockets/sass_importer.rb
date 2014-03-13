@@ -8,7 +8,7 @@ module Sprockets
 
     def initialize(*args)
       @imported_filenames = []
-      super
+      super root.to_s
     end
 
     def find_relative(*args)
