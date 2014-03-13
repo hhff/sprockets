@@ -6,7 +6,7 @@ module Sprockets
   class SassImporter < Sass::Importers::Filesystem
     attr_reader :imported_filenames
 
-    def initialize(context, root)
+    def initialize(root)
       @imported_filenames = []
       super root.to_s
     end
